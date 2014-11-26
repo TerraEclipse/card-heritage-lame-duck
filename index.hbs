@@ -50,9 +50,14 @@
         window.addEventListener('load', findSvg, false);
 
         function findSvg() {
-          var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
-
-          $.each(svgs, function(key, svg) {
+          // var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
+          var svgs = {
+            easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
+            medium: ['no-svg', 'footer-svg'],
+            heavy: ['stop-svg', 'footer-svg'],
+            positive: ['footer-svg']
+          }
+          $.each(svgs['{{card_class}}'], function(key, svg) {
             var object = document.getElementById(svg);
 
             if (object) {
