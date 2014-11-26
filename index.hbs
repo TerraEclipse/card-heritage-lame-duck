@@ -184,7 +184,7 @@
     <script>
       $(function() {
         var options = {
-              variant: '{{#if _variant}}{{_variant}}{{else}}easy{{/if}}',
+              variant: '{{card_class}}',
               spot: '#45B9D0', // Default is blue
               flip: false,
               target: {
@@ -215,7 +215,6 @@
           options.spot = spotColors[3];
           options.flip = true;
         }
-        console.log(window);
 
         // Compile card
         var card = Handlebars.compile(cardTemplate)

@@ -21,9 +21,17 @@
     "avatar": "./img/avatar.jpg"
   },
   "variants": {
-    "easy": {},
-    "medium": {},
-    "heavy": {},
-    "positive": {}
+    "easy": {
+      "card_class": "easy"
+    },
+    "medium": {
+      "card_class": "medium"
+    },
+    "heavy": {
+      "card_class": "heavy"
+    },
+    "positive": {
+      "card_class": "positive"
+    }
   }
 }
