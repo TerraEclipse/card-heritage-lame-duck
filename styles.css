@@ -529,7 +529,7 @@ body {
 .positive .one {
   margin-top: 5px;
   padding-top: 15px;
-  font-size: 31.5px;
+  font-size: 31.45px;
 }
 .positive .one:after {
   content: '';
