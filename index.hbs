@@ -11,7 +11,7 @@
 
     <!-- Handlebars -->
     <script type="x-handlebars-template" id="easy">
-      <div class="card easy" style="background-image: url('./img/states/AZ.jpg');">
+      <div class="card easy" style="background-image: url('./img/states/{{#if state}}{{state}}{{else}}AZ{{/if}}.jpg');">
         <div class="card-content">
           <div class="card-copy">
             <div class="line target">
