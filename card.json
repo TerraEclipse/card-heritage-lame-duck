@@ -1,6 +1,6 @@
 {
-  "title": "No Lame Duck",
-  "description": "Urges Senators to oppose passing legislation in the 2014 lame duck session.",
+  "title": "Heritage Lame Duck Card",
+  "description": "Card for Heritage Lame Duck campaign",
   "typekit": true,
   "sizes": {
     "twitter": {
@@ -15,10 +15,10 @@
   "variables": {
     "first": "Your",
     "last": "Name",
-    "city": "City",
-    "state": "State",
-    "state_full": "State",
-    "avatar": ""
+    "city": "Your Hometown",
+    "state": "",
+    "state_full": "Your Hometown",
+    "avatar": "./img/avatar.jpg"
   },
   "variants": {
     "easy": {},
