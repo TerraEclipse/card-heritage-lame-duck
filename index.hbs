@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Compiled Stylesheet -->
+    {{{styles}}}
+
+    <!-- Typekit -->
+    <script src="//use.typekit.net/tme5fzo.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <!-- Handlebars -->
+    <script type="x-handlebars-template" id="easy">
+      <div class="card {{variant}}" style="background-image: url('img/states/{{state}}.jpg');">
+        <div class="card-content">
+          <div class="card-copy">
+            <div class="line target">
+              <div class="greeting">
+                <div class="photo-wrapper">
+                  <img src="img/senators/{{target.last}}.jpg">
+                </div>
+                <span class="text">Senator {{target.last}},</span>
+              </div>
+            </div>
+            <div class="line one">Please oppose passing legislation</div>
+            <div class="line two">
+              <span class="left">In the</span>
+              <span class="absolute">
+                <object id="lame-duck-svg" type="image/svg+xml" data="img/lame-duck.svg"></object>
+              </span>
+              <span class="right">Session<span class="hanging-period">.</span></span>
+            </div>
+            <div class="line three">
+              <div class="hr top"></div>
+              I&rsquo;m urging you to <span class="emphasis" style="color: {{spot}};">wait <span class="underline"><object id="underline-svg" type="image/svg+xml" data="img/underline.svg"></object></span></span> for the next congress<span class="hanging-period">.</span>
+              <div class="hr bottom"></div>
+            </div>
+            <div class="signature">
+              <div class="user-info">
+                <div class="photo-wrapper">
+                  <img src="img/placeholder-avatar.jpg">
+                </div>
+                <div class="name">{{first}} {{last}}</div>
+                <div class="location" style="color: {{spot}};">{{city}}, {{state}}</div>
+              </div>
+            </div>
+          </div>
+          {{> footer}}
+        </div>
+        <div class="card-outline"></div>
+        <div class="overlay"></div>
+      </div>
+    </script>
+    <script type="x-handlebars-template" id="medium">
+      <div class="card {{variant}}" style="background-image: url('img/states/{{state}}.jpg');">
+        <div class="card-content">
+          <div class="card-copy">
+            <div class="greeting">
+              <div class="photo-wrapper">
+                <img src="img/senators/{{target.last}}.jpg">
+              </div>
+              <span class="text">Hey, Senator {{target.last}}...</span>
+            </div>
+            <div class="line one">
+              <span class="no"><object id="no-svg" type="image/svg+xml" data="img/no.svg"></object></span> Lame duck legislation!
+            </div>
+            <div class="line two">
+              <div class="hr top"></div>
+              <div class="signature {{#if flip}}flip{{/if}}">
+                <div class="photo-wrapper">
+                  <img src="img/placeholder-avatar.jpg">
+                </div>
+                <div class="user-info">
+                  <div class="message">I&rsquo;m <strong style="color: {{spot}};">{{first}}</strong> from <strong style="color: {{spot}};">{{city}}, {{state}}</strong> and I&rsquo;m against passing <strong style="color: {{spot}};">any</strong> legislation during the lame duck session.</div>
+                  <div class="combined-info" style="color: {{spot}};">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}, {{state}}</div>
+                </div>
+              </div>
+              <div class="hr bottom"></div>
+            </div>
+          </div>
+          {{> footer}}
+        </div>
+        <div class="card-outline"></div>
+        <div class="overlay"></div>
+      </div>
+    </script>
+    <script type="x-handlebars-template" id="heavy">
+      <div class="card {{variant}}" style="background-image: url('img/states/{{state}}.jpg');">
+        <div class="card-content">
+          <div class="card-copy">
+            <div class="greeting">
+              <div class="photo-wrapper">
+                <img src="img/senators/{{target.last}}.jpg">
+              </div>
+              <span class="text">Sorry, {{target.first}}...</span>
+            </div>
+            <div class="line one">
+              <div class="hr top"></div>
+              I voted for a new senate to <span class="stop"><object id="stop-svg" type="image/svg+xml" data="img/stop.svg"></object></span>
+            </div>
+            <div class="line two">
+              Harry Reid&rsquo;s radical agenda!
+              <div class="hr bottom"></div>
+            </div>
+            <div class="line three">
+              <div class="signature{{#if flip}} flip{{/if}}">
+                <div class="photo-wrapper">
+                  <img src="img/placeholder-avatar.jpg">
+                </div>
+                <div class="user-info">
+                  <div class="message"><strong style="color: {{spot}};">Say no</strong> to lame duck legislation!<br>It&rsquo;s <strong style="color: {{spot}};">shadow governing!</strong></div>
+                  <div class="combined-info">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}, {{state}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{> footer}}
+        </div>
+        <div class="card-outline"></div>
+        <div class="overlay"></div>
+      </div>
+    </script>
+    <script type="x-handlebars-template" id="positive">
+      <div class="card {{variant}}" style="background-image: url('img/states/{{state}}.jpg');">
+        <div class="card-content">
+          <div class="card-copy">
+            <div class="line target">
+              <div class="greeting">
+                <div class="photo-wrapper">
+                  <img src="img/senators/{{target.last}}.jpg">
+                </div>
+                <span class="text">Dear Senator {{target.last}},</span>
+              </div>
+            </div>
+            <div class="line one">
+              <div class="hr top"></div>
+              Thank you for taking a <span class="emphasis" style="color: {{spot}};">firm stance</span>
+            </div>
+            <div class="line two">On opposing Harry Reid&rsquo;s</div>
+            <div class="line three">
+              Radical <span class="emphasis" style="color: {{spot}};">lame duck</span> agenda!
+              <div class="hr bottom"></div>
+            </div>
+            <div class="signature">
+              <div class="user-info">
+                <div class="photo-wrapper">
+                  <img src="img/placeholder-avatar.jpg">
+                </div>
+                <div class="name">{{first}} {{last}}</div>
+                <div class="location" style="color: {{spot}};">{{city}}, {{state}}</div>
+              </div>
+            </div>
+          </div>
+          {{> footer}}
+        </div>
+        <div class="card-outline"></div>
+        <div class="overlay"></div>
+      </div>
+    </script>
+    <script type="x-handlebars-template" id="footer">
+      <div class="footer">
+        <div class="footer-copy">
+          <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
+        </div>
+        <object id="footer-svg" type="image/svg+xml" data="img/footer.svg"></object>
+      </div>
+    </script>
+
+    <!-- Faux Rendering Script -->
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/handlebars.js"></script>
+    <script>
+      $(function() {
+        var options = {
+              variant: '{{#if _variant}}_variant{{#else}}easy',
+              spot: '#45B9D0', // Default is blue
+              flip: false,
+              target: {
+                title: 'Senator',
+                first: 'Barbara',
+                last: 'Boxer'
+              }
+            }
+          , spotColors = ['#6EB854', '#D9A12D', '#D53D31', '#45B9D0']
+          , cardTemplate = $('#' + options.variant).html();
+
+        // Register common partials
+        Handlebars.registerPartial('footer', $('#footer').html());
+
+        // Add spot color & flip options
+        var ch = options.first.toLowerCase().charAt(0)
+          , code = ch.charCodeAt(0) - 96;
+
+        if (code <= 6) {
+          options.spot = spotColors[0];
+        }
+        else if (code <= 12 && code > 6) {
+          options.spot = spotColors[1];
+          options.flip = true;
+        }
+        else if (code <= 18 && code > 12) {
+          options.spot = spotColors[2];
+        }
+        else {
+          options.spot = spotColors[3];
+          options.flip = true;
+        }
+
+        // Compile card
+        var card = Handlebars.compile(cardTemplate)
+          , markup = card(options);
+
+        // Append compiled card
+        $('body').append(markup);
+
+        // Find all svg paths and add spot color
+        window.addEventListener('load', findSvg, false);
+
+        function findSvg() {
+          var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
+
+          $.each(svgs, function(key, svg) {
+            var object = document.getElementById(svg);
+
+            if (object) {
+              var svgDoc = object.contentDocument
+                , svgRoot = svgDoc.documentElement;
+
+              $('path', svgRoot).attr('fill', options.spot);
+            } 
+          });
+        }
+      });
+    </script>
+  </head>
+
+  <body></body>
+</html>

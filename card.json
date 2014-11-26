@@ -1,0 +1,29 @@
+{
+  "title": "No Lame Duck",
+  "description": "Urges Senators to oppose passing legislation in the 2014 lame duck session.",
+  "typekit": true,
+  "sizes": {
+    "twitter": {
+      "width": 800,
+      "height": 400,
+      "default": true
+    }
+  },
+  "styles": [
+    "./css/styles.css"
+  ],
+  "variables": {
+    "first": "Your",
+    "last": "Name",
+    "city": "City",
+    "state": "State",
+    "state_full": "State",
+    "avatar": ""
+  },
+  "variants": {
+    "easy": {},
+    "medium": {},
+    "heavy": {},
+    "positive": {}
+  }
+}
