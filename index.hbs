@@ -64,31 +64,10 @@
         $('.emphasis').attr('style', 'color: ' + options.spot.hex + ';');
         $('.dynamic').addClass(options.spot.name);
 
-        // Find all svg paths and add spot color
-        // window.addEventListener('load', findSvg, false);
-
-        // function findSvg() {
-        //   var svgs = {
-        //         easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
-        //         medium: ['no-svg', 'footer-svg'],
-        //         heavy: ['stop-svg', 'footer-svg'],
-        //         positive: ['footer-svg']
-        //       }
-        //     , variant = '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}';
-
-        //   $.each(svgs[variant], function(key, svg) {
-        //     var object = document.getElementById(svg);
-
-        //     if (object) {
-        //       var svgDoc = object.contentDocument
-        //         , svgRoot = svgDoc.documentElement
-        //         , styleEl = svgDoc.createElementNS('http://www.w3.org/2000/svg', 'style');
-
-        //       styleEl.textContent = 'path { fill: ' + options.spot + '; }';
-        //       svgRoot.appendChild(styleEl);
-        //     } 
-        //   });
-        // }
+        // Add class if signature should be flipped
+        if (options.flip) {
+          $('.signature').addClass('flip');
+        }
       });
     </script>
   </head>
@@ -149,7 +128,7 @@
             </div>
             <div class="line two">
               <div class="hr top"></div>
-              <div class="signature {{#if flip}}flip{{/if}}">
+              <div class="signature">
                 <div class="photo-wrapper">
                   <img src="./img/placeholder-avatar.jpg">
                 </div>
@@ -183,7 +162,7 @@
               <div class="hr bottom"></div>
             </div>
             <div class="line three">
-              <div class="signature{{#if flip}} flip{{/if}}">
+              <div class="signature">
                 <div class="photo-wrapper">
                   <img src="./img/placeholder-avatar.jpg">
                 </div>
