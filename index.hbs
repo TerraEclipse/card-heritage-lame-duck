@@ -215,6 +215,7 @@
           options.spot = spotColors[3];
           options.flip = true;
         }
+        window.variables['spot'] = options.spot;
 
         // Compile card
         var card = Handlebars.compile(cardTemplate)
