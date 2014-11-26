@@ -1,2 +1,592 @@
-.clearfix:after{content:'';display:table;clear:both}.photo-wrapper{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;overflow:hidden}.photo-wrapper img{width:100%}.start-quote:after{content:'';position:absolute;top:-20px;left:-35px;width:48px;height:37px;background:url('./img/start-quote.png') no-repeat top left}.end-quote:after{content:'';position:absolute;bottom:-15px;right:-40px;width:48px;height:37px;background:url('./img/end-quote.png') no-repeat top left}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0;font-family:'proxima-nova','Helvetica Neue','Helvetica',sans-serif;color:#fff}.card{position:relative;width:800px;height:400px;background:#444}.card-outline{position:absolute;top:0;left:0;width:800px;height:400px;background:url('./img/card-outline.png') no-repeat center top}.overlay{position:absolute;top:0;right:0;bottom:0;left:0}.card-content{position:absolute;width:100%;height:100%}.card-content .card-copy{-webkit-transform:translatex(-50%) translatey(0);-moz-transform:translatex(-50%) translatey(0);transform:translatex(-50%) translatey(0);position:absolute;left:50%;font-weight:900;text-transform:uppercase;letter-spacing:.05em;text-align:center;white-space:nowrap;z-index:2}.card-content .card-copy .greeting{position:relative;display:inline-block}.card-content .card-copy .greeting .photo-wrapper{width:80px;height:80px}.card-content .card-copy .line{position:relative;line-height:1em}.card-content .card-copy .line:after{content:'';display:table;clear:both}.card-content .card-copy .left{float:left}.card-content .card-copy .right{float:right}.card-content .card-copy .absolute{position:absolute}.card-content .card-copy .photo-wrapper{position:absolute;border:1px solid #a1a6ae}.card-content .card-copy .user-info{position:relative}.card-content .card-copy .hr{position:absolute;width:100%;height:1px;background:url('./img/line.png') no-repeat top center}.card-content .card-copy .hr.top{top:0}.card-content .card-copy .hr.bottom{bottom:0}.card-content .card-copy .hanging-period{position:absolute}.card-content object{width:100%}.footer,.footer-copy{position:absolute}.footer{bottom:0;width:800px;height:44px;font-weight:300;z-index:1}.footer-copy{width:800px;margin-top:17px;padding:0 15px;text-align:center;font-size:14px;text-transform:uppercase;letter-spacing:.1em}.url{font-weight:600;text-decoration:underline}.easy,.medium,.heavy,.positive{width:800px;height:400px;display:none}.variant-easy .easy{display:block}.variant-medium .medium{display:block}.variant-heavy .heavy{display:block}.variant-positive .positive{display:block}.easy .card-copy{padding-top:55px}.easy .greeting,.easy .one,.easy .two{margin-bottom:10px}.easy .greeting{margin-left:95px}.easy .greeting .photo-wrapper{top:-30px;left:-95px}.easy .line,.easy .signature{text-shadow:0 2px 4px #000}.easy .one{font-size:31.75px}.easy .one:after{content:'';position:absolute;top:-20px;left:-35px;width:48px;height:37px;background:url('./img/start-quote.png') no-repeat top left}.easy .two{font-size:41.89px}.easy .two .absolute{width:300px;left:148px;top:-8px}.easy .two .hanging-period{bottom:-5px}.easy .two object{width:100%}.easy .three{padding:8px 0}.easy .three:after{content:'';position:absolute;bottom:-15px;right:-40px;width:48px;height:37px;background:url('./img/end-quote.png') no-repeat top left}.easy .three .emphasis{position:relative}.easy .three .underline{position:absolute;left:0;top:17px;z-index:1}.easy .three,.easy .target{font-size:23.79px}.easy .hanging-period{font-size:25px}.easy .signature{position:relative;display:inline-block;margin-top:7px;text-align:left}.easy .signature .photo-wrapper{left:0;top:0;width:140px;height:140px}.easy .signature .user-info{padding-left:160px;padding-top:50px}.easy .signature .name{font-size:23px}.easy .signature .location{font-size:16.79px}.medium .overlay{background:url('../img/medium-overlay.png') no-repeat top left}.medium .card-content .card-copy .greeting,.medium .card-content .card-copy .line,.medium .card-content .card-copy .signature{text-shadow:0 2px 4px #000}.medium .card-content .card-copy .greeting.flip,.medium .card-content .card-copy .line.flip,.medium .card-content .card-copy .signature.flip{margin-left:0;margin-right:195px}.medium .card-content .card-copy .greeting.flip .photo-wrapper,.medium .card-content .card-copy .line.flip .photo-wrapper,.medium .card-content .card-copy .signature.flip .photo-wrapper{left:auto;right:-285px}.medium .card-content .card-copy .greeting.flip .user-info,.medium .card-content .card-copy .line.flip .user-info,.medium .card-content .card-copy .signature.flip .user-info{text-align:center}.medium .card-content .card-copy .line{line-height:1em}.medium .card-content .card-copy .line.one{margin-top:-16px;font-size:43px}.medium .card-content .card-copy .line.two{margin-top:12px;padding:20px 0}.medium .card-content .card-copy .greeting{margin-top:10px;padding-top:73px;font-size:35px}.medium .card-content .card-copy .greeting .text{position:relative;z-index:1}.medium .card-content .card-copy .photo-wrapper{-webkit-transform:translatex(-50%) translatey(0);-moz-transform:translatex(-50%) translatey(0);transform:translatex(-50%) translatey(0);top:0;left:50%;width:100px;height:100px}.medium .card-content .card-copy .no{position:relative;top:10px;display:inline-block;width:106px;margin-right:7px}.medium .card-content .card-copy .signature{position:relative;display:inline-block;margin-left:195px;line-height:1.6em;text-align:left}.medium .card-content .card-copy .signature .photo-wrapper{top:-30px;left:-115px;width:195px;height:195px;z-index:1}.medium .card-content .card-copy .signature .message{max-width:420px;font-size:25px;font-weight:100;text-transform:none;white-space:normal}.medium .card-content .card-copy .signature .message strong{font-size:23px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}.medium .card-content .card-copy .signature .combined-info{margin-top:15px;font-size:16px;font-weight:800;letter-spacing:.1em}.medium .card-content .card-copy .signature .bullet{margin:0 10px;display:inline-block;font-weight:400;color:#fff}.heavy .overlay{background:url('../img/heavy-overlay.png') no-repeat top left}.heavy .card-content .card-copy .greeting,.heavy .card-content .card-copy .line,.heavy .card-content .card-copy .signature{text-shadow:0 2px 4px #000}.heavy .card-content .card-copy .greeting.flip,.heavy .card-content .card-copy .line.flip,.heavy .card-content .card-copy .signature.flip{margin-left:0;margin-right:170px}.heavy .card-content .card-copy .greeting.flip .photo-wrapper,.heavy .card-content .card-copy .line.flip .photo-wrapper,.heavy .card-content .card-copy .signature.flip .photo-wrapper{left:auto;right:-240px}.heavy .card-content .card-copy .greeting,.heavy .card-content .card-copy .line{font-weight:800}.heavy .card-content .card-copy .line{line-height:1em}.heavy .card-content .card-copy .line.one,.heavy .card-content .card-copy .line.two{font-size:34px;line-height:1.2em}.heavy .card-content .card-copy .line.one{padding-top:5px}.heavy .card-content .card-copy .line.two{padding-bottom:15px}.heavy .card-content .card-copy .line.three{margin-top:15px}.heavy .card-content .card-copy .line .stop{position:relative;top:7px;display:inline-block;width:125px}.heavy .card-content .card-copy .greeting{margin-top:10px;padding-top:73px;font-size:28px}.heavy .card-content .card-copy .greeting .text{position:relative;z-index:1}.heavy .card-content .card-copy .photo-wrapper{-webkit-transform:translatex(-50%) translatey(0);-moz-transform:translatex(-50%) translatey(0);transform:translatex(-50%) translatey(0);top:0;left:50%;width:100px;height:100px}.heavy .card-content .card-copy .no{position:relative;top:10px;display:inline-block;width:106px;margin-right:7px}.heavy .card-content .card-copy .signature{position:relative;display:inline-block;margin-left:170px;line-height:1.75em}.heavy .card-content .card-copy .signature .photo-wrapper{top:-30px;left:-95px;width:150px;height:150px;z-index:1}.heavy .card-content .card-copy .signature .message{max-width:420px;font-size:25px;font-weight:100;text-transform:none;white-space:normal}.heavy .card-content .card-copy .signature .message strong{font-size:23px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}.heavy .card-content .card-copy .signature .combined-info{margin-top:15px;font-size:16px;font-weight:800;letter-spacing:.1em}.heavy .card-content .card-copy .signature .bullet{margin:0 10px;display:inline-block;font-weight:400;color:#fff}.positive .card-copy{padding-top:48px}.positive .greeting,.positive .one,.positive .two{margin-bottom:5px}.positive .greeting{margin-left:95px}.positive .greeting .photo-wrapper{top:-25px;left:-95px}.positive .line,.positive .signature{text-shadow:0 2px 4px #000}.positive .hr{z-index:-1}.positive .one{margin-top:5px;padding-top:15px;font-size:31.6px}.positive .one:after{content:'';position:absolute;top:-20px;left:-35px;width:48px;height:37px;background:url('./img/start-quote.png') no-repeat top left}.positive .one:after{top:-5px}.positive .two{font-size:45.08px}.positive .two .absolute{width:300px;left:148px;top:-8px}.positive .two .hanging-period{bottom:-5px}.positive .two object{width:100%}.positive .three{padding-bottom:15px;font-size:42.3px}.positive .three:after{content:'';position:absolute;bottom:-15px;right:-40px;width:48px;height:37px;background:url('./img/end-quote.png') no-repeat top left}.positive .three .emphasis{position:relative}.positive .three .underline{position:absolute;left:0;top:17px;z-index:1}.positive .three:after{bottom:0;right:-30px}.positive .target{font-size:23.79px}.positive .hanging-period{font-size:25px}.positive .signature{position:relative;display:inline-block;margin-top:-12px;text-align:left}.positive .signature .photo-wrapper{left:0;top:0;width:140px;height:140px}.positive .signature .user-info{padding-left:160px;padding-top:50px}.positive .signature .name{font-size:23px}.positive .signature .location{font-size:16.79px}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.photo-wrapper {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.photo-wrapper img {
+  width: 100%;
+}
+.start-quote:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/start-quote.png') no-repeat top left;
+}
+.end-quote:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: -40px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/end-quote.png') no-repeat top left;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  color: #fff;
+}
+.card {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background: #444;
+}
+.card-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 400px;
+  background: url('./img/card-outline.png') no-repeat center top;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card-content .card-copy {
+  -webkit-transform: translatex(-50%) translatey(0);
+  -moz-transform: translatex(-50%) translatey(0);
+  transform: translatex(-50%) translatey(0);
+  position: absolute;
+  left: 50%;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+.card-content .card-copy .greeting {
+  position: relative;
+  display: inline-block;
+}
+.card-content .card-copy .greeting .photo-wrapper {
+  width: 80px;
+  height: 80px;
+}
+.card-content .card-copy .line {
+  position: relative;
+  line-height: 1em;
+}
+.card-content .card-copy .line:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.card-content .card-copy .left {
+  float: left;
+}
+.card-content .card-copy .right {
+  float: right;
+}
+.card-content .card-copy .absolute {
+  position: absolute;
+}
+.card-content .card-copy .photo-wrapper {
+  position: absolute;
+  border: 1px solid #a1a6ae;
+}
+.card-content .card-copy .user-info {
+  position: relative;
+}
+.card-content .card-copy .hr {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: url('./img/line.png') no-repeat top center;
+}
+.card-content .card-copy .hr.top {
+  top: 0;
+}
+.card-content .card-copy .hr.bottom {
+  bottom: 0;
+}
+.card-content .card-copy .hanging-period {
+  position: absolute;
+}
+.card-content object {
+  width: 100%;
+}
+.footer,
+.footer-copy {
+  position: absolute;
+}
+.footer {
+  bottom: 0;
+  width: 800px;
+  height: 44px;
+  font-weight: 300;
+  z-index: 1;
+}
+.footer-copy {
+  width: 800px;
+  margin-top: 17px;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.url {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.easy,
+.medium,
+.heavy,
+.positive {
+  width: 800px;
+  height: 400px;
+  display: none;
+}
+.variant-easy .easy {
+  display: block;
+}
+.variant-medium .medium {
+  display: block;
+}
+.variant-heavy .heavy {
+  display: block;
+}
+.variant-positive .positive {
+  display: block;
+}
+.easy .card-copy {
+  padding-top: 55px;
+}
+.easy .greeting,
+.easy .one,
+.easy .two {
+  margin-bottom: 10px;
+}
+.easy .greeting {
+  margin-left: 95px;
+}
+.easy .greeting .photo-wrapper {
+  top: -30px;
+  left: -95px;
+}
+.easy .line,
+.easy .signature {
+  text-shadow: 0 2px 4px #000;
+}
+.easy .one {
+  font-size: 31.75px;
+}
+.easy .one:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/start-quote.png') no-repeat top left;
+}
+.easy .two {
+  font-size: 41.89px;
+}
+.easy .two .absolute {
+  width: 300px;
+  left: 148px;
+  top: -8px;
+}
+.easy .two .hanging-period {
+  bottom: -5px;
+}
+.easy .two .lame-duck {
+  width: 300px;
+}
+.easy .two .lame-duck.blue {
+  background-image: url('./img/dynamic/lame-duck-blue.png') no-repeat top left;
+}
+.easy .three {
+  padding: 8px 0;
+}
+.easy .three:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: -40px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/end-quote.png') no-repeat top left;
+}
+.easy .three .emphasis {
+  position: relative;
+}
+.easy .three .underline {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  z-index: 1;
+}
+.easy .three,
+.easy .target {
+  font-size: 23.79px;
+}
+.easy .hanging-period {
+  font-size: 25px;
+}
+.easy .signature {
+  position: relative;
+  display: inline-block;
+  margin-top: 7px;
+  text-align: left;
+}
+.easy .signature .photo-wrapper {
+  left: 0;
+  top: 0;
+  width: 140px;
+  height: 140px;
+}
+.easy .signature .user-info {
+  padding-left: 160px;
+  padding-top: 50px;
+}
+.easy .signature .name {
+  font-size: 23px;
+}
+.easy .signature .location {
+  font-size: 16.79px;
+}
+.medium .overlay {
+  background: url('../img/medium-overlay.png') no-repeat top left;
+}
+.medium .card-content .card-copy .greeting,
+.medium .card-content .card-copy .line,
+.medium .card-content .card-copy .signature {
+  text-shadow: 0 2px 4px #000;
+}
+.medium .card-content .card-copy .greeting.flip,
+.medium .card-content .card-copy .line.flip,
+.medium .card-content .card-copy .signature.flip {
+  margin-left: 0;
+  margin-right: 195px;
+}
+.medium .card-content .card-copy .greeting.flip .photo-wrapper,
+.medium .card-content .card-copy .line.flip .photo-wrapper,
+.medium .card-content .card-copy .signature.flip .photo-wrapper {
+  left: auto;
+  right: -285px;
+}
+.medium .card-content .card-copy .greeting.flip .user-info,
+.medium .card-content .card-copy .line.flip .user-info,
+.medium .card-content .card-copy .signature.flip .user-info {
+  text-align: center;
+}
+.medium .card-content .card-copy .line {
+  line-height: 1em;
+}
+.medium .card-content .card-copy .line.one {
+  margin-top: -16px;
+  font-size: 43px;
+}
+.medium .card-content .card-copy .line.two {
+  margin-top: 12px;
+  padding: 20px 0;
+}
+.medium .card-content .card-copy .greeting {
+  margin-top: 10px;
+  padding-top: 73px;
+  font-size: 35px;
+}
+.medium .card-content .card-copy .greeting .text {
+  position: relative;
+  z-index: 1;
+}
+.medium .card-content .card-copy .photo-wrapper {
+  -webkit-transform: translatex(-50%) translatey(0);
+  -moz-transform: translatex(-50%) translatey(0);
+  transform: translatex(-50%) translatey(0);
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+}
+.medium .card-content .card-copy .no {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  width: 106px;
+  margin-right: 7px;
+}
+.medium .card-content .card-copy .signature {
+  position: relative;
+  display: inline-block;
+  margin-left: 195px;
+  line-height: 1.6em;
+  text-align: left;
+}
+.medium .card-content .card-copy .signature .photo-wrapper {
+  top: -30px;
+  left: -115px;
+  width: 195px;
+  height: 195px;
+  z-index: 1;
+}
+.medium .card-content .card-copy .signature .message {
+  max-width: 420px;
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: none;
+  white-space: normal;
+}
+.medium .card-content .card-copy .signature .message strong {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.medium .card-content .card-copy .signature .combined-info {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.medium .card-content .card-copy .signature .bullet {
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+}
+.heavy .overlay {
+  background: url('../img/heavy-overlay.png') no-repeat top left;
+}
+.heavy .card-content .card-copy .greeting,
+.heavy .card-content .card-copy .line,
+.heavy .card-content .card-copy .signature {
+  text-shadow: 0 2px 4px #000;
+}
+.heavy .card-content .card-copy .greeting.flip,
+.heavy .card-content .card-copy .line.flip,
+.heavy .card-content .card-copy .signature.flip {
+  margin-left: 0;
+  margin-right: 170px;
+}
+.heavy .card-content .card-copy .greeting.flip .photo-wrapper,
+.heavy .card-content .card-copy .line.flip .photo-wrapper,
+.heavy .card-content .card-copy .signature.flip .photo-wrapper {
+  left: auto;
+  right: -240px;
+}
+.heavy .card-content .card-copy .greeting,
+.heavy .card-content .card-copy .line {
+  font-weight: 800;
+}
+.heavy .card-content .card-copy .line {
+  line-height: 1em;
+}
+.heavy .card-content .card-copy .line.one,
+.heavy .card-content .card-copy .line.two {
+  font-size: 34px;
+  line-height: 1.2em;
+}
+.heavy .card-content .card-copy .line.one {
+  padding-top: 5px;
+}
+.heavy .card-content .card-copy .line.two {
+  padding-bottom: 15px;
+}
+.heavy .card-content .card-copy .line.three {
+  margin-top: 15px;
+}
+.heavy .card-content .card-copy .line .stop {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  width: 125px;
+}
+.heavy .card-content .card-copy .greeting {
+  margin-top: 10px;
+  padding-top: 73px;
+  font-size: 28px;
+}
+.heavy .card-content .card-copy .greeting .text {
+  position: relative;
+  z-index: 1;
+}
+.heavy .card-content .card-copy .photo-wrapper {
+  -webkit-transform: translatex(-50%) translatey(0);
+  -moz-transform: translatex(-50%) translatey(0);
+  transform: translatex(-50%) translatey(0);
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+}
+.heavy .card-content .card-copy .no {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  width: 106px;
+  margin-right: 7px;
+}
+.heavy .card-content .card-copy .signature {
+  position: relative;
+  display: inline-block;
+  margin-left: 170px;
+  line-height: 1.75em;
+}
+.heavy .card-content .card-copy .signature .photo-wrapper {
+  top: -30px;
+  left: -95px;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+.heavy .card-content .card-copy .signature .message {
+  max-width: 420px;
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: none;
+  white-space: normal;
+}
+.heavy .card-content .card-copy .signature .message strong {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.heavy .card-content .card-copy .signature .combined-info {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.heavy .card-content .card-copy .signature .bullet {
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+}
+.positive .card-copy {
+  padding-top: 48px;
+}
+.positive .greeting,
+.positive .one,
+.positive .two {
+  margin-bottom: 5px;
+}
+.positive .greeting {
+  margin-left: 95px;
+}
+.positive .greeting .photo-wrapper {
+  top: -25px;
+  left: -95px;
+}
+.positive .line,
+.positive .signature {
+  text-shadow: 0 2px 4px #000;
+}
+.positive .hr {
+  z-index: -1;
+}
+.positive .one {
+  margin-top: 5px;
+  padding-top: 15px;
+  font-size: 31.6px;
+}
+.positive .one:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/start-quote.png') no-repeat top left;
+}
+.positive .one:after {
+  top: -5px;
+}
+.positive .two {
+  font-size: 45.08px;
+}
+.positive .two .absolute {
+  width: 300px;
+  left: 148px;
+  top: -8px;
+}
+.positive .two .hanging-period {
+  bottom: -5px;
+}
+.positive .two object {
+  width: 100%;
+}
+.positive .three {
+  padding-bottom: 15px;
+  font-size: 42.3px;
+}
+.positive .three:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: -40px;
+  width: 48px;
+  height: 37px;
+  background: url('./img/end-quote.png') no-repeat top left;
+}
+.positive .three .emphasis {
+  position: relative;
+}
+.positive .three .underline {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  z-index: 1;
+}
+.positive .three:after {
+  bottom: 0px;
+  right: -30px;
+}
+.positive .target {
+  font-size: 23.79px;
+}
+.positive .hanging-period {
+  font-size: 25px;
+}
+.positive .signature {
+  position: relative;
+  display: inline-block;
+  margin-top: -12px;
+  text-align: left;
+}
+.positive .signature .photo-wrapper {
+  left: 0;
+  top: 0;
+  width: 140px;
+  height: 140px;
+}
+.positive .signature .user-info {
+  padding-left: 160px;
+  padding-top: 50px;
+}
+.positive .signature .name {
+  font-size: 23px;
+}
+.positive .signature .location {
+  font-size: 16.79px;
+}
