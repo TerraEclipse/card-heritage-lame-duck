@@ -106,7 +106,7 @@
                   <img src="./img/placeholder-avatar.jpg">
                 </div>
                 <div class="name">{{first}} {{last}}</div>
-                <div class="location emphasis">{{city}}, {{state}}</div>
+                <div class="location emphasis">{{city}}{{#if state}}, {{state}}{{/if}}</div>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="user-info">
                   <div class="message">I&rsquo;m <strong class="emphasis">{{first}}</strong> from <strong class="emphasis">{{city}}, {{state}}</strong> and I&rsquo;m against passing <strong class="emphasis">any</strong> legislation during the lame duck session.</div>
-                  <div class="combined-info emphasis">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}, {{state}}</div>
+                  <div class="combined-info emphasis">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}{{#if state}}, {{state}}{{/if}}</div>
                 </div>
               </div>
               <div class="hr bottom"></div>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="user-info">
                   <div class="message"><strong class="emphasis">Say no</strong> to lame duck legislation!<br>It&rsquo;s <strong class="emphasis">shadow governing!</strong></div>
-                  <div class="combined-info">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}, {{state}}</div>
+                  <div class="combined-info">{{first}} {{last}} <span class="bullet">&bullet;</span> {{city}}{{#if state}}, {{state}}{{/if}}</div>
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@
                   <img src="./img/placeholder-avatar.jpg">
                 </div>
                 <div class="name">{{first}} {{last}}</div>
-                <div class="location emphasis">{{city}}, {{state}}</div>
+                <div class="location emphasis">{{city}}{{#if state}}, {{state}}{{/if}}</div>
               </div>
             </div>
           </div>
