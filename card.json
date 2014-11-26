@@ -15,9 +15,9 @@
   "variables": {
     "first": "Your",
     "last": "Name",
-    "city": "Your Hometown",
-    "state": "",
-    "state_full": "Your Hometown",
+    "city": "Tempe",
+    "state": "AZ",
+    "state_full": "Arizona",
     "avatar": "./img/avatar.jpg"
   },
   "variants": {
