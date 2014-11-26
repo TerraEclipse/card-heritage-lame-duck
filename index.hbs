@@ -66,9 +66,12 @@
 
             if (object) {
               var svgDoc = object.contentDocument
-                , svgRoot = svgDoc.documentElement;
+                , svgRoot = svgDoc.documentElement
+                , styleEl = svgDoc.createElementNS('http://www.w3.org/2000/svg', 'style');
 
-              $('path', svgRoot).attr('fill', options.spot);
+              styleEl.textContent('path { fill: ' + options.spot + '; }');
+              svgRoot.appendChild(styleEl);
+              // $('path', svgRoot).attr('fill', options.spot);
             } 
           });
         }
