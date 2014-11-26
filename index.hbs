@@ -77,7 +77,7 @@
   </head>
 
   <body class="variant-{{#if card_class}}{{card_class}}{{else}}easy{{/if}}">
-    <div class="card" style="background-image: url('./img/states/{{#if state}}{{state}}{{else}}AZ{{/if}}.jpg');">
+    <div class="card" style="background-image: url('{{base_url}}/img/states/{{#if state}}{{state}}{{else}}AZ{{/if}}.jpg');">
     
       <!-- Easy variant -->
       <div class="easy">
@@ -86,7 +86,7 @@
             <div class="line target">
               <div class="greeting">
                 <div class="photo-wrapper">
-                  <img src="./img/senators/{{#if target}}{{target.last}}{{else}}Boxer{{/if}}.jpg">
+                  <img src="{{base_url}}/img/senators/{{#if target}}{{target.last}}{{else}}Boxer{{/if}}.jpg">
                 </div>
                 <span class="text">Senator {{target.last}},</span>
               </div>
