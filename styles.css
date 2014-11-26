@@ -318,7 +318,7 @@ body {
   line-height: 1em;
 }
 .medium .card-content .card-copy .line.one {
-  margin-top: 0;
+  margin-top: -16px;
   font-size: 43px;
 }
 .medium .card-content .card-copy .line.two {
@@ -424,6 +424,7 @@ body {
 }
 .heavy .card-content .card-copy .line.one {
   padding-top: 5px;
+  margin-top: 15px;
 }
 .heavy .card-content .card-copy .line.two {
   padding-bottom: 15px;
