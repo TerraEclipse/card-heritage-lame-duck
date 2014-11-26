@@ -16,7 +16,10 @@
       $(function() {
         var options = {
               variant: '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}',
-              spot: '#45B9D0', // Default is blue
+              spot: {
+                name: 'blue',
+                hex: '#45B9D0'
+              }, // Default is blue
               flip: false,
               target: {
                 title: 'Senator',
@@ -24,7 +27,24 @@
                 last: 'Boxer'
               }
             }
-          , spotColors = ['#6EB854', '#D9A12D', '#D53D31', '#45B9D0'];
+          , spotColors = [
+              {
+                name: 'green',
+                hex: '#6EB854'
+              }, 
+              {
+                name: 'orange',
+                hex: '#D9A12D'
+              }, 
+              {
+                name: 'red',
+                hex: '#D53D31'
+              }, 
+              {
+                name: 'blue',
+                hex: '#45B9D0'
+              }
+            ];
 
         // Add spot color & flip options
         var firstName = '{{first}}'
@@ -47,32 +67,33 @@
         }
 
         // Find all emphasis tags and add spot color
-        $('.emphasis').attr('style', 'color: ' + options.spot + ';');
+        $('.emphasis').attr('style', 'color: ' + options.spot.hex + ';');
+        $('.dynamic').addClass(options.spot.name);
 
         // Find all svg paths and add spot color
-        window.addEventListener('load', findSvg, false);
+        // window.addEventListener('load', findSvg, false);
 
-        function findSvg() {
-          var svgs = {
-                easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
-                medium: ['no-svg', 'footer-svg'],
-                heavy: ['stop-svg', 'footer-svg'],
-                positive: ['footer-svg']
-              }
-            , variant = '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}';
+        // function findSvg() {
+        //   var svgs = {
+        //         easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
+        //         medium: ['no-svg', 'footer-svg'],
+        //         heavy: ['stop-svg', 'footer-svg'],
+        //         positive: ['footer-svg']
+        //       }
+        //     , variant = '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}';
 
-          $.each(svgs[variant], function(key, svg) {
-            var object = document.getElementById(svg);
+        //   $.each(svgs[variant], function(key, svg) {
+        //     var object = document.getElementById(svg);
 
-            if (object) {
-              var svgDoc = object.contentDocument
-                , svgRoot = svgDoc.documentElement
-                , styleEl = svgDoc.createElementNS('http://www.w3.org/2000/svg', 'style');
+        //     if (object) {
+        //       var svgDoc = object.contentDocument
+        //         , svgRoot = svgDoc.documentElement
+        //         , styleEl = svgDoc.createElementNS('http://www.w3.org/2000/svg', 'style');
 
-              styleEl.textContent = 'path { fill: ' + options.spot + '; }';
-              svgRoot.appendChild(styleEl);
-            } 
-          });
+        //       styleEl.textContent = 'path { fill: ' + options.spot + '; }';
+        //       svgRoot.appendChild(styleEl);
+        //     } 
+        //   });
         }
       });
     </script>
