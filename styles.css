@@ -219,6 +219,7 @@ body {
 }
 .easy .two .lame-duck {
   width: 300px;
+  height: 56px;
 }
 .easy .two .lame-duck.blue {
   background-image: url('./img/dynamic/lame-duck-blue.png') no-repeat top left;
