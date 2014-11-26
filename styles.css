@@ -173,8 +173,14 @@ body {
 .variant-easy .easy {
   display: block;
 }
+.variant-medium .overlay {
+  background: url('./img/medium-overlay.png') no-repeat top left;
+}
 .variant-medium .medium {
   display: block;
+}
+.variant-heavy .overlay {
+  background: url('./img/heavy-overlay.png') no-repeat top left;
 }
 .variant-heavy .heavy {
   display: block;
@@ -286,9 +292,6 @@ body {
 .easy .signature .location {
   font-size: 16.79px;
 }
-.medium .overlay {
-  background: url('./img/medium-overlay.png') no-repeat top left;
-}
 .medium .card-content .card-copy .greeting,
 .medium .card-content .card-copy .line,
 .medium .card-content .card-copy .signature {
@@ -389,9 +392,6 @@ body {
   display: inline-block;
   font-weight: 400;
   color: #fff;
-}
-.heavy .overlay {
-  background: url('./img/heavy-overlay.png') no-repeat top left;
 }
 .heavy .card-content .card-copy .greeting,
 .heavy .card-content .card-copy .line,
