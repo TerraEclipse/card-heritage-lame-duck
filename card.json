@@ -18,7 +18,11 @@
     "city": "Tempe",
     "state": "AZ",
     "state_full": "Arizona",
-    "avatar": "./img/avatar.jpg"
+    "avatar": "./img/avatar.jpg",
+    "target": {
+      "first": "First",
+      "last": "Last"
+    }
   },
   "variants": {
     "easy": {
