@@ -162,6 +162,15 @@ body {
 .footer-background.blue {
   background: url('./img/dynamic/footer-blue.png') no-repeat top left;
 }
+.footer-background.green {
+  background: url('./img/dynamic/footer-green.png') no-repeat top left;
+}
+.footer-background.red {
+  background: url('./img/dynamic/footer-red.png') no-repeat top left;
+}
+.footer-background.orange {
+  background: url('./img/dynamic/footer-orange.png') no-repeat top left;
+}
 .easy,
 .medium,
 .heavy,
@@ -236,6 +245,15 @@ body {
 }
 .easy .two .lame-duck.blue {
   background: url('./img/dynamic/lame-duck-blue.png') no-repeat top left;
+}
+.easy .two .lame-duck.green {
+  background: url('./img/dynamic/lame-duck-green.png') no-repeat top left;
+}
+.easy .two .lame-duck.red {
+  background: url('./img/dynamic/lame-duck-red.png') no-repeat top left;
+}
+.easy .two .lame-duck.orange {
+  background: url('./img/dynamic/lame-duck-orange.png') no-repeat top left;
 }
 .easy .three {
   padding: 8px 0;
@@ -354,6 +372,15 @@ body {
 .medium .card-content .card-copy .no.blue {
   background: url('./img/dynamic/no-blue.png') no-repeat top left;
 }
+.medium .card-content .card-copy .no.green {
+  background: url('./img/dynamic/no-green.png') no-repeat top left;
+}
+.medium .card-content .card-copy .no.red {
+  background: url('./img/dynamic/no-red.png') no-repeat top left;
+}
+.medium .card-content .card-copy .no.orange {
+  background: url('./img/dynamic/no-orange.png') no-repeat top left;
+}
 .medium .card-content .card-copy .signature {
   position: relative;
   display: inline-block;
@@ -441,6 +468,15 @@ body {
 .heavy .card-content .card-copy .line .stop.blue {
   background: url('./img/dynamic/stop-blue.png') no-repeat top left;
 }
+.heavy .card-content .card-copy .line .stop.green {
+  background: url('./img/dynamic/stop-green.png') no-repeat top left;
+}
+.heavy .card-content .card-copy .line .stop.red {
+  background: url('./img/dynamic/stop-red.png') no-repeat top left;
+}
+.heavy .card-content .card-copy .line .stop.orange {
+  background: url('./img/dynamic/stop-orange.png') no-repeat top left;
+}
 .heavy .card-content .card-copy .greeting {
   margin-top: 10px;
   padding-top: 73px;
@@ -458,13 +494,6 @@ body {
   left: 50%;
   width: 100px;
   height: 100px;
-}
-.heavy .card-content .card-copy .no {
-  position: relative;
-  top: 10px;
-  display: inline-block;
-  width: 106px;
-  margin-right: 7px;
 }
 .heavy .card-content .card-copy .signature {
   position: relative;
