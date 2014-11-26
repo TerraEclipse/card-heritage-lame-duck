@@ -15,9 +15,9 @@
   "variables": {
     "first": "Your",
     "last": "Name",
-    "city": "Tempe",
-    "state": "AZ",
-    "state_full": "Arizona",
+    "city": "Your Hometown",
+    "state": "",
+    "state_full": "Your Hometown",
     "avatar": "./img/avatar.jpg",
     "target": {
       "title": "Senator",
