@@ -52,12 +52,14 @@
         function findSvg() {
           // var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
           var svgs = {
-            easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
-            medium: ['no-svg', 'footer-svg'],
-            heavy: ['stop-svg', 'footer-svg'],
-            positive: ['footer-svg']
-          }
-          $.each(svgs['{{card_class}}'], function(key, svg) {
+                easy: ['lame-duck-svg', 'underline-svg', 'footer-svg'],
+                medium: ['no-svg', 'footer-svg'],
+                heavy: ['stop-svg', 'footer-svg'],
+                positive: ['footer-svg']
+              }
+            , variant = '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}';
+
+          $.each(svgs[variant], function(key, svg) {
             var object = document.getElementById(svg);
 
             if (object) {
