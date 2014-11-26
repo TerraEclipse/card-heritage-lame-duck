@@ -13,7 +13,7 @@
     "./styles.css"
   ],
   "variables": {
-    "first": "abigail",
+    "first": "Your",
     "last": "Name",
     "city": "Tempe",
     "state": "AZ",
