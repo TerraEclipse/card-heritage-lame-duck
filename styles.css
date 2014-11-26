@@ -440,7 +440,7 @@ body {
   height: 46px;
 }
 .heavy .card-content .card-copy .line .stop.blue {
-  background: url('./img/stop-blue.png') no-repeat top left;
+  background: url('./img/dynamic/stop-blue.png') no-repeat top left;
 }
 .heavy .card-content .card-copy .greeting {
   margin-top: 10px;
