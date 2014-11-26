@@ -211,7 +211,7 @@ body {
 }
 .easy .two .absolute {
   width: 300px;
-  left: 158px;
+  left: 154px;
   top: -8px;
 }
 .easy .two .hanging-period {
@@ -243,7 +243,12 @@ body {
   position: absolute;
   left: 0;
   top: 17px;
+  width: 66px;
+  height: 12px;
   z-index: 1;
+}
+.easy .three .underline.blue {
+  background: url('./img/dynamic/underline-blue.png') no-repeat top left;
 }
 .easy .three,
 .easy .target {
