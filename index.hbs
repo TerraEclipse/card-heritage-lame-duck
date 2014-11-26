@@ -9,9 +9,69 @@
     <script src="//use.typekit.net/tme5fzo.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-    <!-- Handlebars -->
-    <script type="x-handlebars-template" id="easy">
-      <div class="card easy" style="background-image: url('./img/states/{{#if state}}{{state}}{{else}}AZ{{/if}}.jpg');">
+    <!-- Faux Rendering Script -->
+    <script src="./js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="./js/vendor/handlebars.js"></script>
+    <script>
+      $(function() {
+        var options = {
+              variant: '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}',
+              spot: '#45B9D0', // Default is blue
+              flip: false,
+              target: {
+                title: 'Senator',
+                first: 'Barbara',
+                last: 'Boxer'
+              }
+            }
+          , spotColors = ['#6EB854', '#D9A12D', '#D53D31', '#45B9D0'];
+
+        // Add spot color & flip options
+        var firstName = '{{first}}'
+          , ch = firstName.toLowerCase().charAt(0)
+          , code = ch.charCodeAt(0) - 96;
+
+        if (code <= 6) {
+          options.spot = spotColors[0];
+        }
+        else if (code <= 12 && code > 6) {
+          options.spot = spotColors[1];
+          options.flip = true;
+        }
+        else if (code <= 18 && code > 12) {
+          options.spot = spotColors[2];
+        }
+        else {
+          options.spot = spotColors[3];
+          options.flip = true;
+        }
+
+        // Find all svg paths and add spot color
+        window.addEventListener('load', findSvg, false);
+
+        function findSvg() {
+          var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
+
+          $.each(svgs, function(key, svg) {
+            var object = document.getElementById(svg);
+
+            if (object) {
+              var svgDoc = object.contentDocument
+                , svgRoot = svgDoc.documentElement;
+
+              $('path', svgRoot).attr('fill', options.spot);
+            } 
+          });
+        }
+      });
+    </script>
+  </head>
+
+  <body class="variant-{{#if card_class}}{{card_class}}{{else}}easy{{/if}}">
+    <div class="card" style="background-image: url('./img/states/{{#if state}}{{state}}{{else}}AZ{{/if}}.jpg');">
+    
+      <!-- Easy variant -->
+      <div class="easy">
         <div class="card-content">
           <div class="card-copy">
             <div class="line target">
@@ -45,19 +105,11 @@
               </div>
             </div>
           </div>
-          <div class="footer">
-            <div class="footer-copy">
-              <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
-            </div>
-            <object id="footer-svg" type="image/svg+xml" data="./img/footer.svg"></object>
-          </div>
         </div>
-        <div class="card-outline"></div>
-        <div class="overlay"></div>
       </div>
-    </script>
-    <script type="x-handlebars-template" id="medium">
-      <div class="card medium" style="background-image: url('./img/states/{{state}}.jpg');">
+
+      <!-- Medium variant -->
+      <div class="medium">
         <div class="card-content">
           <div class="card-copy">
             <div class="greeting">
@@ -83,19 +135,11 @@
               <div class="hr bottom"></div>
             </div>
           </div>
-          <div class="footer">
-            <div class="footer-copy">
-              <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
-            </div>
-            <object id="footer-svg" type="image/svg+xml" data="./img/footer.svg"></object>
-          </div>
         </div>
-        <div class="card-outline"></div>
-        <div class="overlay"></div>
       </div>
-    </script>
-    <script type="x-handlebars-template" id="heavy">
-      <div class="card heavy" style="background-image: url('./img/states/{{state}}.jpg');">
+
+      <!-- Heavy variant -->
+      <div class="heavy">
         <div class="card-content">
           <div class="card-copy">
             <div class="greeting">
@@ -124,19 +168,11 @@
               </div>
             </div>
           </div>
-          <div class="footer">
-            <div class="footer-copy">
-              <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
-            </div>
-            <object id="footer-svg" type="image/svg+xml" data="./img/footer.svg"></object>
-          </div>
         </div>
-        <div class="card-outline"></div>
-        <div class="overlay"></div>
       </div>
-    </script>
-    <script type="x-handlebars-template" id="positive">
-      <div class="card positive" style="background-image: url('./img/states/{{state}}.jpg');">
+
+      <!-- Positive variant -->
+      <div class="positive">
         <div class="card-content">
           <div class="card-copy">
             <div class="line target">
@@ -166,83 +202,20 @@
               </div>
             </div>
           </div>
-          <div class="footer">
-            <div class="footer-copy">
-              <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
-            </div>
-            <object id="footer-svg" type="image/svg+xml" data="./img/footer.svg"></object>
-          </div>
         </div>
-        <div class="card-outline"></div>
-        <div class="overlay"></div>
       </div>
-    </script>
+          
+      <!-- Footer and background -->
+      <div class="footer">
+        <div class="footer-copy">
+          <span class="link">Send a message to your senator at <span class="url">lameduck.heritageaction.com</span></span>
+        </div>
+        <object id="footer-svg" type="image/svg+xml" data="./img/footer.svg"></object>
+      </div>
+      <div class="card-outline"></div>
+      <div class="overlay"></div>
 
-    <!-- Faux Rendering Script -->
-    <script src="./js/vendor/jquery-1.11.0.min.js"></script>
-    <script src="./js/vendor/handlebars.js"></script>
-    <script>
-      $(function() {
-        var options = {
-              variant: '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}',
-              spot: '#45B9D0', // Default is blue
-              flip: false,
-              target: {
-                title: 'Senator',
-                first: 'Barbara',
-                last: 'Boxer'
-              }
-            }
-          , spotColors = ['#6EB854', '#D9A12D', '#D53D31', '#45B9D0']
-          , cardTemplate = $('#' + options.variant).html();
+    </div>
 
-        // Add spot color & flip options
-        var firstName = '{{first}}'
-          , ch = firstName.toLowerCase().charAt(0)
-          , code = ch.charCodeAt(0) - 96;
-
-        if (code <= 6) {
-          options.spot = spotColors[0];
-        }
-        else if (code <= 12 && code > 6) {
-          options.spot = spotColors[1];
-          options.flip = true;
-        }
-        else if (code <= 18 && code > 12) {
-          options.spot = spotColors[2];
-        }
-        else {
-          options.spot = spotColors[3];
-          options.flip = true;
-        }
-
-        // Compile card
-        var card = Handlebars.compile(cardTemplate)
-          , markup = card(options);
-
-        // Append compiled card
-        $('body').append(markup);
-
-        // Find all svg paths and add spot color
-        window.addEventListener('load', findSvg, false);
-
-        function findSvg() {
-          var svgs = ['stop-svg', 'footer-svg', 'lame-duck-svg', 'underline-svg', 'no-svg'];
-
-          $.each(svgs, function(key, svg) {
-            var object = document.getElementById(svg);
-
-            if (object) {
-              var svgDoc = object.contentDocument
-                , svgRoot = svgDoc.documentElement;
-
-              $('path', svgRoot).attr('fill', options.spot);
-            } 
-          });
-        }
-      });
-    </script>
-  </head>
-
-  <body></body>
+  </body>
 </html>

@@ -121,3 +121,33 @@ body {
     text-decoration: underline;
   }
 }
+
+// VARIANT SWITCHING
+
+.easy,
+.medium,
+.heavy,
+.positive {
+  display: none;
+}
+
+.variant-easy {
+  .easy {
+    display: block;
+  }
+}
+.variant-medium {
+  .medium {
+    display: block;
+  }
+}
+.variant-heavy {
+  .heavy {
+    display: block;
+  }
+}
+.variant-positive {
+  .positive {
+    display: block;
+  }
+}
