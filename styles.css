@@ -155,6 +155,13 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
+.footer-background {
+  width: 800px;
+  height: 46px;
+}
+.footer-background.blue {
+  background: url('./img/dynamic/footer-blue.png') no-repeat top left;
+}
 .easy,
 .medium,
 .heavy,
