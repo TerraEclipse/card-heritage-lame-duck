@@ -197,7 +197,7 @@
           , cardTemplate = $('#' + options.variant).html();
 
         // Add spot color & flip options
-        var ch = options.first.toLowerCase().charAt(0)
+        var ch = {{first}}.toLowerCase().charAt(0)
           , code = ch.charCodeAt(0) - 96;
 
         if (code <= 6) {
