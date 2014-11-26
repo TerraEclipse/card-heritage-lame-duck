@@ -184,7 +184,7 @@
     <script>
       $(function() {
         var options = {
-              variant: '{{_variant.card_class}}',
+              variant: '{{#if card_class}}{{card_class}}{{else}}easy{{/if}}',
               spot: '#45B9D0', // Default is blue
               flip: false,
               target: {

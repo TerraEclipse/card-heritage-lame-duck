@@ -22,16 +22,24 @@
   },
   "variants": {
     "easy": {
-      "card_class": "easy"
+      "variables": {
+        "card_class": "easy"
+      }
     },
     "medium": {
-      "card_class": "medium"
+      "variables": {
+        "card_class": "medium"
+      }
     },
     "heavy": {
-      "card_class": "heavy"
+      "variables": {
+        "card_class": "heavy"
+      }
     },
     "positive": {
-      "card_class": "positive"
+      "variables": {
+        "card_class": "positive"
+      }
     }
   }
 }
