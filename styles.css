@@ -222,7 +222,7 @@ body {
   height: 56px;
 }
 .easy .two .lame-duck.blue {
-  background-image: url('./img/dynamic/lame-duck-blue.png') no-repeat top left;
+  background: url('./img/dynamic/lame-duck-blue.png') no-repeat top left;
 }
 .easy .three {
   padding: 8px 0;
