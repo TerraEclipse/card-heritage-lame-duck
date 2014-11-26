@@ -69,7 +69,7 @@
                 , svgRoot = svgDoc.documentElement
                 , styleEl = svgDoc.createElementNS('http://www.w3.org/2000/svg', 'style');
 
-              styleEl.textContent('path { fill: ' + options.spot + '; }');
+              styleEl.textContent = 'path { fill: ' + options.spot + '; }';
               svgRoot.appendChild(styleEl);
               // $('path', svgRoot).attr('fill', options.spot);
             } 
