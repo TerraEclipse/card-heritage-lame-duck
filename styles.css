@@ -287,7 +287,7 @@ body {
   font-size: 16.79px;
 }
 .medium .overlay {
-  background: url('../img/medium-overlay.png') no-repeat top left;
+  background: url('./img/medium-overlay.png') no-repeat top left;
 }
 .medium .card-content .card-copy .greeting,
 .medium .card-content .card-copy .line,
@@ -391,7 +391,7 @@ body {
   color: #fff;
 }
 .heavy .overlay {
-  background: url('../img/heavy-overlay.png') no-repeat top left;
+  background: url('./img/heavy-overlay.png') no-repeat top left;
 }
 .heavy .card-content .card-copy .greeting,
 .heavy .card-content .card-copy .line,
