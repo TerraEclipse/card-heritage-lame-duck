@@ -346,7 +346,7 @@ body {
   display: inline-block;
   width: 109px;
   height: 53px;
-  margin-right: 7px;
+  margin-right: 5px;
 }
 .medium .card-content .card-copy .no.blue {
   background: url('./img/dynamic/no-blue.png') no-repeat top left;
@@ -368,7 +368,7 @@ body {
 .medium .card-content .card-copy .signature .message {
   max-width: 420px;
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: none;
   white-space: normal;
 }
