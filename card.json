@@ -18,7 +18,7 @@
     "city": "Your Hometown",
     "state": "",
     "state_full": "Your Hometown",
-    "avatar": "./img/avatar.jpg"
+    "avatar": "./img/default-avatar.jpg"
   },
   "variants": {
     "easy": {
