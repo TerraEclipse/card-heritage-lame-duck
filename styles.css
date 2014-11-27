@@ -80,7 +80,7 @@ body {
   letter-spacing: 0.05em;
   text-align: center;
   white-space: nowrap;
-  z-index: 2;
+  z-index: 3;
 }
 .card-content .card-copy .greeting {
   position: relative;
