@@ -82,7 +82,7 @@
             <div class="line target">
               <div class="greeting">
                 <div class="photo-wrapper">
-                  <img src="{{base_url}}/img/senators/{{#if target}}{{target.last}}{{else}}Boxer{{/if}}.jpg">
+                  <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
                 </div>
                 <span class="text">Senator {{target.last}},</span>
               </div>
