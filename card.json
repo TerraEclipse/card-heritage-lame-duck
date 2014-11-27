@@ -16,12 +16,12 @@
     "first": "Your",
     "last": "Name",
     "city": "Your Hometown",
-    "state": "AK",
+    "state": "WV",
     "state_full": "Your Hometown",
     "avatar": "./img/default-avatar.jpg",
     "target": {
-      "first": "Mark",
-      "last": "Begich"
+      "first": "John",
+      "last": "Rockefeller"
     }
   },
   "variants": {
