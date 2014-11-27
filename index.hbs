@@ -84,7 +84,7 @@
                 <div class="photo-wrapper">
                   <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
                 </div>
-                <span class="text">Senator {{target.last}},</span>
+                <span class="text">Senator{{#if target}} {{target.last}}{{/if}},</span>
               </div>
             </div>
             <div class="line one">Please oppose passing legislation</div>
@@ -121,7 +121,7 @@
               <div class="photo-wrapper">
                 <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
               </div>
-              <span class="text">Hey, Senator {{target.last}}...</span>
+              <span class="text">Hey, Senator{{#if target}} {{target.last}}{{/if}}...</span>
             </div>
             <div class="line one">
               <span class="dynamic no"></span> Lame duck legislation!
@@ -150,7 +150,7 @@
               <div class="photo-wrapper">
                 <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
               </div>
-              <span class="text">Sorry, {{target.first}}...</span>
+              <span class="text">Sorry, {{#if target}}{{target.first}}{{else}}Senator{{/if}}...</span>
             </div>
             <div class="line one">
               <div class="hr top"></div>
@@ -184,7 +184,7 @@
                 <div class="photo-wrapper">
                   <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
                 </div>
-                <span class="text">Dear Senator {{target.last}},</span>
+                <span class="text">Dear Senator{{#if target}} {{target.last}}{{/if}},</span>
               </div>
             </div>
             <div class="line one">
