@@ -16,13 +16,9 @@
     "first": "Your",
     "last": "Name",
     "city": "Your Hometown",
-    "state": "WV",
+    "state": "",
     "state_full": "Your Hometown",
-    "avatar": "https://pbs.twimg.com/profile_images/424484505915621376/EOwsjaMZ_400x400.png",
-    "target": {
-      "first": "John",
-      "last": "Rockefeller"
-    }
+    "avatar": "./img/default-avatar.jpg",
   },
   "variants": {
     "easy": {
