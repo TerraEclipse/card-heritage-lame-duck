@@ -119,7 +119,7 @@
           <div class="card-copy">
             <div class="greeting">
               <div class="photo-wrapper">
-                <img src="{{base_url}}/img/senators/{{target.last}}.jpg">
+                <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
               </div>
               <span class="text">Hey, Senator {{target.last}}...</span>
             </div>
@@ -149,7 +149,7 @@
           <div class="card-copy">
             <div class="greeting">
               <div class="photo-wrapper">
-                <img src="{{base_url}}/img/senators/{{target.last}}.jpg">
+                <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
               </div>
               <span class="text">Sorry, {{target.first}}...</span>
             </div>
@@ -183,7 +183,7 @@
             <div class="line target">
               <div class="greeting">
                 <div class="photo-wrapper">
-                  <img src="{{base_url}}/img/senators/{{target.last}}.jpg">
+                  <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
                 </div>
                 <span class="text">Dear Senator {{target.last}},</span>
               </div>
