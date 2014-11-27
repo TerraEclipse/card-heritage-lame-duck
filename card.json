@@ -19,6 +19,7 @@
     "state": "",
     "state_full": "Your Hometown",
     "avatar": "./img/default-avatar.jpg",
+    "target": null
   },
   "variants": {
     "easy": {
