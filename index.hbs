@@ -102,7 +102,7 @@
             </div>
             <div class="signature">
               <div class="user-info">
-                <div class="photo-wrapper" style="background-image: url('{{#if avatar}}{{avatar}}{{else}}{{base_url}}/img/default-avatar.jpg');"></div>
+                <div class="photo-wrapper" style="background-image: url('{{#if avatar}}{{avatar}}{{else}}{{base_url}}/img/default-avatar.jpg{{/if}}');"></div>
                 <div class="name">{{first}} {{last}}</div>
                 <div class="location emphasis">{{city}}{{#if state}}, {{state}}{{/if}}</div>
               </div>
