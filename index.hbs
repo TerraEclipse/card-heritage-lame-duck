@@ -82,7 +82,7 @@
             <div class="line target">
               <div class="greeting">
                 <div class="photo-wrapper">
-                  <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
+                  <img src="{{#if target}}{{target.photo}}{{else}}{{base_url}}/img/default-avatar.jpg{{/if}}">
                 </div>
                 <span class="text">Senator{{#if target}} {{target.last}}{{/if}},</span>
               </div>
@@ -117,7 +117,7 @@
           <div class="card-copy">
             <div class="greeting">
               <div class="photo-wrapper">
-                <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
+                <img src="{{#if target}}{{target.photo}}{{else}}{{base_url}}/img/default-avatar.jpg{{/if}}">
               </div>
               <span class="text">Hey, Senator{{#if target}} {{target.last}}{{/if}}...</span>
             </div>
@@ -144,7 +144,7 @@
           <div class="card-copy">
             <div class="greeting">
               <div class="photo-wrapper">
-                <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
+                <img src="{{#if target}}{{target.photo}}{{else}}{{base_url}}/img/default-avatar.jpg{{/if}}">
               </div>
               <span class="text">Sorry, {{#if target}}{{target.first}}{{else}}Senator{{/if}}...</span>
             </div>
@@ -176,7 +176,7 @@
             <div class="line target">
               <div class="greeting">
                 <div class="photo-wrapper">
-                  <img src="{{base_url}}/img/{{#if target}}senators/{{state}}_{{target.last}}{{else}}default-avatar{{/if}}.jpg">
+                  <img src="{{#if target}}{{target.photo}}{{else}}{{base_url}}/img/default-avatar.jpg{{/if}}">
                 </div>
                 <span class="text">Dear Senator{{#if target}} {{target.last}}{{/if}},</span>
               </div>
