@@ -133,6 +133,10 @@ body {
 .card-content object {
   width: 100%;
 }
+.signature .photo-wrapper {
+  background-size: cover;
+  background-position-x: center;
+}
 .footer,
 .footer-copy {
   position: absolute;
